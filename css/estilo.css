@@ -1,0 +1,133 @@
+
+/* ESTILOS GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+/*------------------*/
+
+
+/* ESTILOS FORMULARIO */
+
+form{ /* Contenedor del formulario */
+    padding: 20px;
+    border-bottom: 1px dashed #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo a los type que están dentro del input del formulario */
+form input[type="text"]{ /* texto */
+    border: none;
+    border-bottom: 1px dashed #999;
+    text-align: center;
+    font-size: 1.5em;
+    width: 500px;
+}
+
+form input[type="submit"]{  /* botón */
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #444;
+    margin-top: 20px;
+}
+
+input,button{ /* Estilo al input y a los botones en general */
+    display: block;
+    -webkit-appearance: none;
+    appearance: none;
+    font-family: sans-serif;
+}
+
+
+/*------------------*/
+
+
+/* ESTILOS TAREAS */
+
+.tareas{ /* Contenedor */
+    width: 450px;
+    margin: 20px auto;
+}
+
+.tarea{ /* Contenido de la tarea */
+    border: 1px solid #999;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tarea h2,
+.tarea input[type="text"]{ /* Título e input de la tarea */
+    font-weight: normal;
+    color: #444;
+    font-size: 2em;
+    width: 100%;
+    display: none; /* Ocultamos */
+}
+
+.tarea input[type="text"]{ /* Input de la tarea, aplicamos un estilo diferente para diferenciarlo del título */
+    border: none;
+    border-bottom: 1px dashed #999;
+    padding-bottom: 5px;
+}
+
+.tarea input.visible, .tarea .visible{ 
+    display: block;
+}
+
+
+/*------------------*/
+
+
+/* ESTILOS BOTONES */
+
+.boton{ /* Estilo a los botones de la tarea en general */
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 10px;
+    padding: 10px 15px;
+    color: #444;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.estado{ /* Aplicamos el estilo al botón con la clase "estado" */
+    border: none;
+    background-color: #333;
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.estado span{ /* Aplicamos el estilo al span del botón de la clase "estado" */
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f00;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 1s, background-color 0.8s;
+}
+
+.terminada span{ /* Esta clase de añade después para verificar si se ha terminado la tarea o no */
+    background-color: #0c0;
+    left: 30px;
+}
