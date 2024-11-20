@@ -1,4 +1,4 @@
-# Ejercicio Express
+# Ejercicio To Do Vanilla
 Este repositorio contiene un ejercicio realizado HTML, CSS y JS. Es el Frontend de la Api To Do.
 
 ## Propósito
